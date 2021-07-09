@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2157E1C2-3C82-4CB4-8FD0-78A628843FDB}</ProjectGuid>
+    <ProjectGuid>{010A59C4-B949-4F42-B6C1-8A47124ECA91}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Demo_IOCardControl</RootNamespace>
