@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Demo_IOCardControl.MyControl;
+
 namespace Demo_IOCardControl
 {
     /// <summary>
@@ -20,9 +22,13 @@ namespace Demo_IOCardControl
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
         public MainWindow()
         {
             InitializeComponent();
+
+           
         }
     }
 }
