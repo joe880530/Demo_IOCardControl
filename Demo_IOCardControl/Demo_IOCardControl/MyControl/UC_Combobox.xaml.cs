@@ -15,37 +15,50 @@ using System.Windows.Shapes;
 
 namespace Demo_IOCardControl.MyControl
 {
+
+    //public class Category
+    //{
+    //    public string Name { get; set; }
+    //    public string[] List { get; set; }
+    //}
     /// <summary>
     /// UC_Listbox.xaml에 대한 상호 작용 논리
     /// </summary>
     public partial class UC_Combobox : UserControl
     {
-        private Category categoryData;
-        public Category CategoryData
-        {
-            get
-            {
-                return categoryData;
-            }
+        //private Category categoryData;
+        //public Category CategoryData
+        //{
+        //    get
+        //    {
+        //        return categoryData;
+        //    }
 
-            set
-            {
-                categoryData = value;
+        //    set
+        //    {
+        //        categoryData = value;
 
-                label_CategoryName.Content = categoryData.Name;
+        //        label_CategoryName.Content = categoryData.Name;
 
-                foreach (string itemsName in categoryData.List)
-                {
-                    ComboBox_Category.Items.Add(itemsName);
-                }
-            }
-        }
+        //        if (categoryData.List != null)
+        //        {
+        //            if(categoryData.List.Count() > 0)
+        //            {
+        //                foreach (string itemsName in categoryData.List)
+        //                {
+        //                    ComboBox_Category.Items.Add(itemsName);
+        //                }
+        //            }
+        //            else
+        //            {
+        //                ComboBox_Category.Items.Add("Nothing");
+        //            }
+        //        }
+                
+                
+        //    }
+        //}
 
-        public class Category
-        {
-            public string Name { get; set; }
-            public string[] List { get; set; }
-        }
 
         public UC_Combobox()
         {

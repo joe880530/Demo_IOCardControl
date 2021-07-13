@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 
 using Demo_IOCardControl.MyControl;
 
+using JihoControl;
+
 namespace Demo_IOCardControl
 {
     /// <summary>
@@ -28,7 +30,18 @@ namespace Demo_IOCardControl
         {
             InitializeComponent();
 
-           
+            //Category temp = new Category();
+            //temp.Name = "test";
+
+            //IOCard_Combobox.CategoryData = temp;
+
+            //UC_ComboBox.Category temp_2 = new UC_ComboBox.Category()
+
+            Category temp = new Category();
+
+            temp.Name = "jiho";
+
+            testControl.CategoryData = temp;
         }
     }
 }

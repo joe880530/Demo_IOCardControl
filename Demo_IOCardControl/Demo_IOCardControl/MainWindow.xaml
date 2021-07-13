@@ -4,10 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo_IOCardControl"
-        xmlns:MyControl="clr-namespace:Demo_IOCardControl.MyControl" x:Class="Demo_IOCardControl.MainWindow"
+        xmlns:MyControl="clr-namespace:Demo_IOCardControl.MyControl" 
+        xmlns:JihoControl="clr-namespace:JihoControl;assembly=JihoControl"
+        x:Class="Demo_IOCardControl.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" Background="#FF150A0A">
     <Grid>
-        <MyControl:UC_Combobox HorizontalAlignment="Left" Margin="102.844,100.54,0,0" VerticalAlignment="Top"/>
+        <MyControl:UC_Combobox x:Name="IOCard_Combobox" HorizontalAlignment="Left" Margin="48,46,0,0" VerticalAlignment="Top" Width="235"/>
+        <JihoControl:UC_ComboBox x:Name="testControl" HorizontalAlignment="Left" Margin="87,177,0,0" VerticalAlignment="Top" Width="183"/>
     </Grid>
 </Window>
