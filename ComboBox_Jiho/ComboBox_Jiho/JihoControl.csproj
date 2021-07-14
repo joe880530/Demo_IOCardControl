@@ -48,6 +48,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UC_ToggleLEDButton.xaml.cs">
+      <DependentUpon>UC_ToggleLEDButton.xaml</DependentUpon>
+    </Compile>
     <Page Include="UC_ComboBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -56,6 +59,10 @@
       <DependentUpon>UC_ComboBox.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UC_ToggleLEDButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

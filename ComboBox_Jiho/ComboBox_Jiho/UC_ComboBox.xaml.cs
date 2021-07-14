@@ -15,62 +15,30 @@ using System.Windows.Shapes;
 
 namespace JihoControl
 {
-    public class Category
-    {
-        public string Name { get; set; }
-        public string[] List { get; set; }
-    }
 
     /// <summary>
     /// UserControl1.xaml에 대한 상호 작용 논리
     /// </summary>
     public partial class UC_ComboBox : UserControl
     {
-        private Category categoryData;
+        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(UC_ComboBox));
+        public static readonly DependencyProperty ItemsListProperty = DependencyProperty.Register("ItemsList", typeof(List<ComboBoxItem>), typeof(UC_ComboBox));
 
-        public Category CategoryData
+        public string Title
         {
-            get
-            {
-                return categoryData;
-            }
-
-            set
-            {
-                categoryData = value;
-
-                label_CategoryName.Content = categoryData.Name;
-
-                if (categoryData.List != null)
-                {
-                    if (categoryData.List.Count() > 0)
-                    {
-                        foreach (string itemsName in categoryData.List)
-                        {
-                            ComboBox_Category.Items.Add(itemsName);
-                        }
-                    }
-                    else
-                    {
-                        ComboBox_Category.Items.Add("Nothing");
-                    }
-                }
-                else
-                {
-                    ComboBox_Category.Items.Add("Nothing");
-                }
-
-
-            }
+            get { return (string)GetValue(TitleProperty); }
+            set { SetValue(TitleProperty, value); }
         }
+
+        public int ItemsList
+        {
+            get { return (int)GetValue(ItemsListProperty); }
+            set { SetValue(ItemsListProperty, value); }
+        }   
 
         public UC_ComboBox()
         {
             InitializeComponent();
         }
-
-
-
-
     }
 }

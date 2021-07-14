@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:JihoControl"
+             Name="root"
              mc:Ignorable="d" 
              d:DesignHeight="30" d:DesignWidth="300">
     <Grid x:Name="Grid_Main">
@@ -12,8 +13,9 @@
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label_CategoryName" Content="Label" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="1"/>
-        <ComboBox x:Name="ComboBox_Category" Margin="0" Grid.Column="2" Grid.ColumnSpan="1"/>
+        <!--<Label x:Name="label_CategoryName" Content="{Binding categoryData.Name}" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="1"/>-->
+        <Label Content="{Binding ElementName=root, Path=Title}" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="1"/>
+        <ComboBox ItemsSource="{Binding ElementName=root, Path=ItemsList}" Margin="0" Grid.Column="2" Grid.ColumnSpan="1"/>
 
     </Grid>
 </UserControl>
